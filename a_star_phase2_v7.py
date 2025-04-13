@@ -233,11 +233,11 @@ def get_point(prompt, obstacles):
             # Ensure theta meets constraints.
             while True:
                 try:
-                    theta = int(input(f"Enter the theta-coordinate for {prompt} (must be 0-360 and a multiple of 30): "))
-                    if 0 <= theta <= 360 and theta % 30 == 0:
+                    theta = int(input(f"Enter the theta-coordinate for {prompt} (must be 0-359): "))
+                    if 0 <= theta < 360:
                         break
                     else:
-                        print("Invalid theta. It must be between 0 and 360 and a multiple of 30. Please try again.")
+                        print("Invalid theta. It must be between 0 and 359. Please try again.")
                 except ValueError:
                     print("Invalid input. Please enter an integer value for theta.")
         
@@ -420,10 +420,10 @@ def A_star_search(map, obstacles, start, end, rpms):
 
                     # If the node is in the open list AND the new cost is cheaper than the old cost to this node, rewrite it
                     # within visited and add the newNode to the open_set. The old version will be safely skipped. 
-                    # elif seen[node_key] == True:
-                    #     if visited[node_key].Node_Cost > newNode.Node_Cost:
-                    #         visited[node_key] = newNode
-                    #         heapq.heappush(open_set, newNode)
+                    elif seen[node_key] == True:
+                        if visited[node_key].Node_Cost > newNode.Node_Cost:
+                            visited[node_key] = newNode
+                            heapq.heappush(open_set, newNode)
                 
                     # Draw each of the movement directions. 
                     cv2.line(map, (int(newNode.Node_x), int(newNode.Node_y)),(int(current_node.Node_x), int(current_node.Node_y)),(155,155,155),1)
@@ -479,7 +479,7 @@ def main():
     print("Program Start")
     print("Please enter the start and end coordinates.")
     print("Coordinates should be given as integers in units of mm from the bottom left origin.")
-    print("Image Width is 600 mm. Image Height is 250 mm.")
+    print("Image Width is 600 cm. Image Height is 250 cm.")
 
     # Generate and expand the obstacle map.
     obstacle_map = gen_obstacle_map()
