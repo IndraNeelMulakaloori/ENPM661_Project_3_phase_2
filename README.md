@@ -36,7 +36,7 @@ The magenta circle is where the program starts and the cyan circle is the end go
 - Pink = Final Path
 
 **How To Operate Program**:
-`Measuremnts in centimeters`
+`Measurements in centimeters`
 1. Run the program via the terminal.
 2. The terminal will prompt the user for the clearance radius in mm. **Suggested values: 90**
 3. The terminal will prompt the user for the Wheel RPMS. This is how we control the robot by providing the left and right wheels. **Enter the first radius/sec value for the motors (int) (1-10 suggested). Suggested value : 3,6**
@@ -55,6 +55,8 @@ The magenta circle is where the program starts and the cyan circle is the end go
     
 5. The program will then output **Planning Path...**. Wait until the program outputs the final path **Goal Reached**. It will also return the time taken for completion.
 6. When **Program Finished** is output to the terminal, the terminal starts to execute `ROS Publisher` to publish the `wheel RPM's` to Gazebo/Falcon Simualtors.
+
+**Gazebo Simulation**:
 
 **Expected Time to Execute Program**: 
 The longest paths that span the whole map take `~3 minutes`. 

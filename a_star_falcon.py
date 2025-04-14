@@ -2,8 +2,7 @@
 import numpy as np
 import cv2
 import heapq
-import time
-import functools
+
 
 
 HEIGHT = 300  # in cm
