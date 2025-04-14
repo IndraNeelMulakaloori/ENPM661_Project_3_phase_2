@@ -53,16 +53,20 @@ The magenta circle is where the program starts and the cyan circle is the end go
      end_x = 585, end_y = 0
     `` 
     
-5. The program will then output **Planning Path...**. Wait until the program outputs the final path **Goal Reached**. It will also return the time taken for completion.
-6. When **Program Finished** is output to the terminal, the terminal starts to execute `ROS Publisher` to publish the `wheel RPM's` to Gazebo/Falcon Simualtors.
+5. The program will then output **Planning Path...**. Wait until the program outputs the final path **Goal Reached**. It will also return the time taken for completion and visualises the path.
+6. When **Program Finished** is output to the terminal, it will print the `end_x , end_y` and the wheel RPM's.
 
 **Gazebo Simulation**:
-
+1) Launch the Gazebo simulation : `ros2 launch turtlebot3_project3 competition_world.launch.py`
+2) Run the publisher script : `ros2 run turtlebot3_project3 path_plan_follow.py `
+3) Input the coordinates, wheel RPM's , clearance as prompted
+4) The script will execute if a path is found and starts to publish the wheel RPM's to the Gazebo.
+5) The simulation starts.
 **Expected Time to Execute Program**: 
 The longest paths that span the whole map take `~3 minutes`. 
 
  
-Link To Code on GitHub:
+Link To Code on GitHub: https://github.com/IndraNeelMulakaloori/ENPM661_Project_3_phase_2
 
 
 2D Path Plan video: https://youtu.be/yOOYC23qgDg 

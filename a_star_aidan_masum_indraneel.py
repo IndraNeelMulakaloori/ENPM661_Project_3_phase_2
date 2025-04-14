@@ -315,7 +315,7 @@ def A_star_search(map, obstacles, start, end, Revs):
     
     # Open video file to write path planning images to.
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    video_filename = "A_star_Proj3_phase2_video.mp4"
+    video_filename = "phase_2_a_star_aidan_masum_indraneel.mp4"
     fps = 60
     video_out = cv2.VideoWriter(video_filename, fourcc, fps, (width, height))
     
