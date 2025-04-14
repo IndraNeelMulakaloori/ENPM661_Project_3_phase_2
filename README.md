@@ -1,4 +1,4 @@
-# ENPM661_Project_3_phase_2
+# ENPM661 PROJECT 3 PHASE 2
 
 - Aiden Stark (UID : 113907074)
 - Masum Thakkar (UID : 121229076)
