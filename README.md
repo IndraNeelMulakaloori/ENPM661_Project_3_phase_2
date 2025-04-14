@@ -1,6 +1,6 @@
 # ENPM661_Project_3_phase_2
 
-- Aiden Stark (UID : 113907074)
+- Aidan Stark (UID : 113907074)
 - Masum Thakkar (UID : 121229076)
 - Indraneel Mulakaloori (UID : 121377715)
 
