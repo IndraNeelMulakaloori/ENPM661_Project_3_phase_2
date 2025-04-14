@@ -251,7 +251,7 @@ def get_point(prompt, obstacles):
     while not valid_input:
         try:
             x = int(input(f"Enter the x-coordinate for {prompt} (int): "))
-            y = int(input(f"Enter the y-coordinate for {prompt} (int): "))
+            y = int(input(f"Enter the y-coordinate for {prompt} (int): ")) + 150
         except ValueError:
             print("Invalid input. Please enter a numerical value.")
             continue
