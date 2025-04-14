@@ -62,6 +62,7 @@ The magenta circle is where the program starts and the cyan circle is the end go
 3) Input the coordinates, wheel RPM's , clearance as prompted
 4) The script will execute if a path is found and starts to publish the wheel RPM's to the Gazebo.
 5) The simulation starts.
+
 **Expected Time to Execute Program**: 
 The longest paths that span the whole map take `~3 minutes`. 
 
