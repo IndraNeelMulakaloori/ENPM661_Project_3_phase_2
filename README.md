@@ -61,7 +61,8 @@ solution (part 1), or begin to publish the solution as a ROS node to the turtleb
 The longest paths that span the whole map take `~3 minutes`. 
 
 Part 01:
-run the program with "python a_star_phase2_FINAL.py"
+Make sure you are in the same directory as the file "python a_star_phase2_FINAL.py" within the terminal.
+run the program with "python a_star_phase2_FINAL.py" in the terminal.
 Follow instructions in "How to Operate Program".
 
 Part 02: 
