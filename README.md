@@ -28,12 +28,12 @@ The magenta circle is where the program starts and the cyan circle is the end go
 
 **Color Key**:
 - Black = Unexplored Free Space
-- Dark Green = Explored Free Space
+- Dark Gray = Explored Free Space
 - Red = Obstacle Space
 - Orange = Clearance Space Around Obstacles and Walls
 - Magenta = Start Point
 - Cyan = End Point
-- Pink = Final Path
+- Magenta Line = Final Path
 
 **How To Operate Program**:
 `Measuremnts in centimeters`
