@@ -3,7 +3,6 @@
 import numpy as np
 import cv2
 import heapq
-import copy
 import time
 import functools
 

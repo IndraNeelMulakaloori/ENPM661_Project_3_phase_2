@@ -3,7 +3,6 @@
 import numpy as np
 import cv2
 import heapq
-import copy
 import time
 import functools
 
@@ -12,7 +11,7 @@ from rclpy.node import Node as ROSNode
 from geometry_msgs.msg import Twist
 from pathlib import Path
 
-import sys
+
 
 HEIGHT = 300 # cm
 WIDTH = 600 # cm
