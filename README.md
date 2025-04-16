@@ -71,6 +71,10 @@ launch the world in Gazebo with "ros2 launch turtlebot3_project3 competition_wor
 launch our ROS node in a seperate terminal with "ros2 run turtlebot3_project3 path_plan_follow.py"
 From here, follow the steps as prompted in "How to Operate Program".
 
+Falcon simulation 
+colcon build and source your workspace. in the following path cd ~/duality/falconsim/UMD-ENPM661-AStar-FalconSim-Assignment/ROS2/falcon_turtlebot3_project_ws.
+launch the duality world with suggested coordianates - ros2 launch astar_falcon_planner ros_falcon_astar.launch.py     start_position:="[0.0,1.5,0.0]"     end_position:="[5.4,2.0, 0.0]"     robot_radius:=0.220     clearance:=0.04     delta_time:=0.1     wheel_radius:=0.033     wheel_distance:=0.287     rpms:="[3.0, 6.0]"
+
  
 Link To Code on GitHub: https://github.com/IndraNeelMulakaloori/ENPM661_Project_3_phase_2.git
 
@@ -78,3 +82,5 @@ Link To Code on GitHub: https://github.com/IndraNeelMulakaloori/ENPM661_Project_
 2D Path Plan video: https://youtu.be/yOOYC23qgDg 
 
 Gazebo Path Plan Video: https://youtu.be/B5i-X3uU_io 
+
+falcon simulation video: 
